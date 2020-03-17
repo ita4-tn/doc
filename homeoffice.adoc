@@ -1,0 +1,85 @@
+= Vorkurs, Home Office
+
+:encoding: utf-8
+:lang: de
+:keywords: vorkurs, home office
+:revision: 0.1.1
+:revnumber: 0.1.1
+:revdate: 13.03.2020
+:revremark: request
+:copyright: ita4 2020 (c)
+:author: jz
+:email: jz@drheuer.de
+:toc: macro
+:toc-title: Inhaltsverzeichnis
+
+Copyright: {copyright} +
+Author: {author} +
+eMail: {email} +
+Version: {revision} +
+// vim set: syntax=asciidoc
+
+== Arbeiten von zu Hause aus
+
+Um im Notfall den Unterricht vom Home Office aus weiterhin durchführen zu können, verwenden wir folgende Hilfsmittel:
+
+
+Arbeitsmaterialien (Dateien) finden Sie unter:
+
+*https://ita-web.westeurope.cloudapp.azure.com/*
+
+
+Einen SSH Server können Sie wie folgt erreichen:
+
+* FQDN: ita4.mgeg.de
+
+[source,bash]
+.Einloggen von Linux aus
+----
+ssh ita4.mgeg.de
+----
+
+Um den SSH Server verwenden zu können verwenden Sie bitte folgende Konfigurationsdatei:
+
+[source,bash]
+.+~/.ssh/config+
+----
+...
+Host jmp.mgeg.de
+  User		ju
+  Port 		31722
+  HostName	172.24.0.200
+
+Host ita4.mgeg.de
+  User		jz
+  Port 		31722
+#  ProxyJump     jmp.mgeg.de
+  IdentityFile  /home/tn/.ssh/id_rsa
+----
+
+Wenn Sie auf dem SSH Server eingeloggt sind wechseln Sie zum Benutzer _tn_.
+
+ sudo -iu tn
+
+Als Benutzer _tn_ wechseln Sie dann in die tmux Session:
+
+ tmux a -t ita4
+
+=== Telefon Konferenz
+
+Von Montags bis Freitags finden täglich Telefonkonferenzen statt.
+
+==== Uhrzeiten
+
+* 08:15
+* 11:30
+* 13:30
+* 15:30
+
+==== Telefonkonferenz
+
+* Konferenzraum-Nr: 2862 + 
+* Mainz: 06131 / 9504908 +
+* Berlin: 030 / 63417989 +
+
+

@@ -1,0 +1,37 @@
+== Befehle
+
+=== datei pfad
+
+ pwd
+
+=== um eine tmux zu starten
+
+ ssh benutzername@ip addresse
+ passwort
+ tmux a
+
+=== in eine tmux session eine Datei zu bewegen
+
+ Scp benutzername@ ip addresse:/vonverzeichnes /zuverzeichnen
+ beispiel :scp tn@172.24.0.174:/home/tn/doc/xy.adoc /home/ita-04/doc/
+
+=== Als root sich anmelden
+
+ sudo -i
+
+=== Dateien
+
+ mkdir name = dateien herstellen
+ rm name = dateien loeschen
+
+=== history
+
+----
+ history     <1>
+ history -c  <2>
+----
+
+<1> verzeichnes anzeigen
+<2> verzeichnes loeschen
+
+um 

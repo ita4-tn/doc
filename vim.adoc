@@ -1,0 +1,64 @@
+
+== Introduction vi
+
+The program vi is a old UNIX editor.
+
+
+=== movement keys
+
+[width="60%",cols="<20,<60",options="header,footer"]
+|===
+| key
+| action
+
+| h
+| left
+
+| j
+| down
+
+| k
+| up
+
+| l
+| right
+|===
+
+
+=== actions
+
+[width="60%",cols="<20,<60"]
+|===
+| y
+| copy
+
+| p
+| insert
+
+| d
+| delete line
+
+| x
+| delete a char
+|===
+
+
+=== commands
+
+[width="60%",cols="<20,<60",options="header,footer"]
+|===
+| command
+| action
+
+| :w
+| write
+
+| :q
+| quit
+
+| :set numer
+| show line numbers
+
+|===
+
+

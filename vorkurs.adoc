@@ -1,0 +1,39 @@
+= Vorkurs
+
+:encoding: utf-8
+:lang: de
+:keywords: documentation, vorkurs
+:revision: 0.5.0
+:revnumber: 0.1.1
+:revdate: 11.03.2020
+:revremark: draft
+:copyright: ita4 2020 (c)
+:author: tn,jz,ss,fs,sb,dn,nw
+:email: jz@drheuer.de
+:toc: macro
+:toc-title: Inhaltsverzeichnis
+
+Copyright: {copyright} +
+Author: {author} +
+eMail: {email} +
+Version: {revision} +
+// vim set: syntax=asciidoc
+
+toc::[]
+
+image::./img/logo.svg[Firmenlogo]
+
+when you need to know
+
+// include::basics.adoc[]
+include::befehle.adoc[]
+include::bash.adoc[]
+include::vi.adoc[]
+include::tmux.adoc[]
+// include::asciidoc.adoc[]
+
+
+=== Links
+
+https://asciidoctor.org[Asciidoctor]
+

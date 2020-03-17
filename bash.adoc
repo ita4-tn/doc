@@ -1,0 +1,90 @@
+= Bash
+
+== Einfuehrung
+
+Laut Wikipedia:
+Bash (auch BASH oder bash), die Bourne-again shell, ist eine freie Unix-Shell unter GPL.
+
+Als shell ist Bash eine Mensch-Maschine-Schnittstelle, die eine Umgebung (englisch environment) bereitstellt, in der zeilenweise Texteingaben und -ausgaben möglich sind. Letzteres erfolgt über die Befehlszeile, in die Befehle eingetippt und durch betätigen der Eingabetaste eingegeben werden. 
+
+Bash-Skripte sind geeignet um Programme, gemäß der eigenen Bedürfnisse, miteinander zu kombinieren und sie spielen eine zentrale Rolle im Alltag der Systemadministration.
+
+
+== Installation/Setup
+Die bash ist eine vorinstallierte shell auf den meisten GNU/Linux Betriebssystemen
+es wird keine Installation benötigt abgesehen von der Installation von Linux Betriebssystem
+
+=== Vorbereitung
+Für die Bash wird keine weitere Vorbereitung benötigt.
+Da es eine vorinstallierte shell ist!
+
+== Anwendung
+Man nutzt die shell zur Ausführungen von Befehlen.
+Innerhalb der shell kann man sich per Befehle in den Verzeichnissen bewegen.
+
+Um innerhalb eines Verzeichnisses ein neues Verzeichnis zu erstellen, benötigt man den Befehl:
+
+----
+mkdir (verzeichnisname)
+----
+Der Befehl bedeutet 'make directory' also ein Verzeichnis erstellen.
+Benutzen wir diesen Befehl aus dem Grundverzeichnis '/home/benutzer' heraus, können wir 'XYZ' als Verzeichnis anlegen. 
+Das Verzeichnis wird mit dem Befehl 
+
+----
+mkdir XYZ
+----
+angelegt.
+ 
+Mit dem Befehl:
+
+----
+cd
+----
+wechselt man aus dem aktuellen Verzeichnis auf ein anderes 'Ziel' Verzeichnis.
+Der Befehl __cd__ setzt sich zusammen aus 'change' und 'directory'
+
+Beispiel: Wir befinden uns im Grundverzeichnis: /home/benutzer/ und können jetzt mit dem Befehl
+
+----
+cd /home/benutzer/XYZ
+----
+unseren aktuellen Standort in das Verzeichnis 'XYZ' wechseln.
+Um nun herauszufinden in welchem Verzeichnis wir uns befinden: 'Public Works Department'
+
+----
+pwd
+----
+nun wird angezeigt in welchem Verzeichnis wir uns befinden.
+
+*/home/benutzer/XYZ$*
+
+Den aktuellen Ordnerinhalt zeigt der Befehl:
+
+----
+ls -la
+----
+
+'ls -la' steht in dem Fall für __ls__ = 'listing' also auflisten und
+die Option __-la__ steht für 'long all' also eine lange und ausführliche liste.
+
+----
+ls -la /home/benutzer/
+----
+
+zeigt in diesem Fall die Auflistung des Ordners '/home/benutzer/' 
+Die Liste wird in voller Ausführung angezeigt.
+
+Will man jetzt in diesem Verzeichnis eine Datei erstellen:
+
+----
+oasis.txt
+----
+Dadurch wird eine Textdatei erstellt mit dem Namen 'oasis'
+
+=== Formatierung
+Es handelt sich um eine shell sodass eine Formatierung nicht vorhanden ist
+
+=== Ausgabe
+Die Ausgabe findet ausschliesslich in textbasierter Ausgabe in der shell statt.
+
